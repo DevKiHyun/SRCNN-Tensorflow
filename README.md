@@ -1,8 +1,7 @@
 # SRCNN-Tensorflow (2018/08/15)
 
 ## Introduction
-We implement a tensorflow model for ["Image Super-Resolution Using Deep Convolutional Networks"]
-(https://arxiv.org/pdf/1501.00092.pdf)
+We implement a tensorflow model for ["Image Super-Resolution Using Deep Convolutional Networks"](https://arxiv.org/pdf/1501.00092.pdf)
  - We use 91 dataset as training dataset.
  
 ## Environment
