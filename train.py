@@ -63,7 +63,7 @@ def training(SRCNN, config):
     step = 0
     for epoch in range(training_epoch):
         avg_cost = 0
-        avg_vdsr_psnr_y_ch = 0
+        avg_srcnn_psnr_y_ch = 0
         for i in range(total_batch):
             start = time.time()
             batch_x = train_inputs_batch.next_batch(batch_size, num_thread=8)
@@ -84,7 +84,7 @@ def training(SRCNN, config):
 
         if epoch % 10 == 0:
             '''
-           Evaluate VDSR performance
+           Evaluate SRCNN performance
            '''
             for index in range(5):
                 '''
@@ -102,10 +102,10 @@ def training(SRCNN, config):
 
                 _psnr = psnr(label_y, result_input_y, peak=255)
                 print(_psnr)
-                avg_vdsr_psnr_y_ch += _psnr / 5
+                avg_srcnn_psnr_y_ch += _psnr / 5
 
             print('Epoch:', '%04d' % (epoch + 1), 'cost =', '{:.9f}'.format(avg_cost),
-                  '\nY_Ch AVG PSNR:: Bicubic: {:.9f} || VDSR: {:.9f}'.format(avg_bicubic_psnr_y_ch, avg_vdsr_psnr_y_ch))
+                  '\nY_Ch AVG PSNR:: Bicubic: {:.9f} || SRCNN: {:.9f}'.format(avg_bicubic_psnr_y_ch, avg_srcnn_psnr_y_ch))
 
         np.random.shuffle(shuffle_indicese)
         train_inputs_batch.train_shuffle(shuffle_indicese)
