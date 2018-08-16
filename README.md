@@ -29,3 +29,9 @@ python main.py
 # if you want to change training epoch ex) 1500 epoch (default) -> 2000 epoch
 python main.py --training_epoch 2000
 ```
+## Result
+##### Results on Set 5
+
+|  Scale    | Bicubic | tf_SRCNN |
+|:---------:|:-------:|:----:|
+| 2x - PSNR|   33.33	|   36.70	|
