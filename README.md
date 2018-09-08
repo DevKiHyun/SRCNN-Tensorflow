@@ -51,13 +51,13 @@ python demo.py --image_index 13 --scale 4 --coordinate [100,100] --interval 50
 ##### Results on Urban 100 (visual)
 - Original (Urban100 / index 1)
 
-  ![Imgur](https://github.com/DevKiHyun/SRCNN-Tensorflow/blob/master/result/original.png)
+  ![Imgur](https://github.com/DevKiHyun/SRCNN-Tensorflow/blob/master/SRCNN/result/original.png)
  
  - Bicubic (Urban100 / index 1)
 
-    ![Imgur](https://github.com/DevKiHyun/SRCNN-Tensorflow/blob/master/result/bicubic.png)
+    ![Imgur](https://github.com/DevKiHyun/SRCNN-Tensorflow/blob/master/SRCNN/result/bicubic.png)
  
  - SRCNN (Urban100 / index 1)
  
-    ![Imgur](https://github.com/DevKiHyun/SRCNN-Tensorflow/blob/master/result/SRCNN.png)
+    ![Imgur](https://github.com/DevKiHyun/SRCNN-Tensorflow/blob/master/SRCNN/result/SRCNN.png)
 
