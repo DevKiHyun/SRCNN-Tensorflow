@@ -17,8 +17,8 @@ We implement a tensorflow model for ["Image Super-Resolution Using Deep Convolut
 - main.py : Execute train.py and pass the default value.
 - srcnn.py : srcnn model definition.
 - train.py : Train the SRCNN model and represent the test performance.
-- demo.py : Test the SRCNN model and show result images and psnr.
-- util.py : Utility functions for this project.
+- test.py : Test the SRCNN model and show result images and psnr.
+- demo.py : Upscale a input image by SRCNN model.
 - log.txt : The log of training process.
 - model : The save files of the trained srcnn.
 
