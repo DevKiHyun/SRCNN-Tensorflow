@@ -48,7 +48,6 @@ python test.py
 
 # Default args: image_index = 1, scale = 2, coordinate = [50,50], interval = 30 
 # You can change args: image_index = 13, scale = 4, coorindate [100,100], interval = 50
-
 python test.py --image_index 13 --scale 4 --coordinate [100,100] --interval 50
 ```
 ### Demo
@@ -57,7 +56,6 @@ python demo.py
 
 # Default args: scale = 2
 # You can change arg: scale = 4
-
 python demo.py --scale 4
 ```
 
