@@ -33,12 +33,21 @@ python main.py --training_epoch 2000
 
 ### Test
 ```shell
+python test.py
+
+# Default args: image_index = 1, scale = 2, coordinate = [50,50], interval = 30 
+# You can change args: image_index = 13, scale = 4, coorindate [100,100], interval = 50
+
+python test.py --image_index 13 --scale 4 --coordinate [100,100] --interval 50
+```
+### Demo
+```shell
 python demo.py
 
-# default args: image_index = 1, scale = 2, coordinate = [50,50], interval = 30 
-# you can change args: image_index = 13, scale = 4, coorindate [100,100], interval = 50
+# Default args: scale = 2
+# You can change arg: scale = 4
 
-python demo.py --image_index 13 --scale 4 --coordinate [100,100] --interval 50
+python demo.py --scale 4
 ```
 
 ## Result
@@ -46,7 +55,7 @@ python demo.py --image_index 13 --scale 4 --coordinate [100,100] --interval 50
 
 |  Scale    | Bicubic | tf_SRCNN |
 |:---------:|:-------:|:----:|
-| 2x - PSNR|   33.33	|   36.70	|
+| 2x - PSNR|   33.33	|   34.92	|
 
 ##### Results on Urban 100 (visual)
 - Original (Urban100 / index 1)
