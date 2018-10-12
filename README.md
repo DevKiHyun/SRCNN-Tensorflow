@@ -61,6 +61,7 @@ python demo.py --scale 4
 
 ## Result
 ##### Results on Set 5
+##### PSNR on Y channel
 
 |  Scale    | Bicubic | tf_SRCNN |
 |:---------:|:-------:|:----:|
